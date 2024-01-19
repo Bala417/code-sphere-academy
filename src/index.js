@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { Provider } from "react-redux";
+import store from "./store/Store";
+import { loginSuccess } from "./store/reducers/AuthSlice";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Check the storage for the login state and dispatch the loginSuccess action
+const storedLoginState = localStorage.getItem("isLoggedIn");
+if (storedLoginState === "true") {
+  store.dispatch(loginSuccess());
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>
+  </Provider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
