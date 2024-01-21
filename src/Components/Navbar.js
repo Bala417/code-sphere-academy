@@ -5,12 +5,12 @@ import { signOut } from "firebase/auth";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../store/reducers/AuthSlice";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast, Bounce } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
-  console.log(auth?.currentUser?.name);
 
   const handleLogin = () => {
     navigate("/loginPage");
@@ -20,16 +20,23 @@ const Navbar = () => {
     try {
       await signOut(auth);
       dispatch(logout());
-      alert("logged out successfully");
+
       navigate("/loginPage");
+      toast.success("Logged out successfully", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
     } catch (err) {
       console.error(err);
     }
   };
-
-  //   console.log(loggedIn);
-  //   console.log(useSelector((state) => state.authSlice.login));
-  //   const loggedinn = useSelector((state) => state.authSlice.login);
 
   return (
     <nav className="bg-gray-800">
@@ -45,10 +52,6 @@ const Navbar = () => {
               <span className="absolute -inset-0.5"></span>
               <span className="sr-only">Open main menu</span>
 
-              {/* Icon when menu is closed.
-
-            Menu open: "hidden", Menu closed: "block" */}
-
               <svg
                 className="block h-6 w-6"
                 fill="none"
@@ -57,10 +60,6 @@ const Navbar = () => {
               >
                 <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
-
-              {/* Icon when menu is open.
-
-            Menu open: "block", Menu closed: "hidden" */}
 
               <svg
                 className="hidden h-6 w-6"
@@ -87,37 +86,26 @@ const Navbar = () => {
                   className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
                   aria-current="page"
                 >
-                  Home
+                  <Link to={"/"}>Home</Link>
                 </p>
               </div>
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            {/* <button
-              type="button"
-              className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-            >
-              <span className="absolute -inset-1.5"></span>
-              <span className="sr-only">View notifications</span>
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
-                />
-              </svg>
-            </button> */}
             {useSelector((state) => state.auth.isLoggedIn) ? (
-              <button onClick={handleLogout}>Logout</button>
+              <button
+                onClick={handleLogout}
+                className="text-slate-200 bg-slate-600 rounded px-3 py-1"
+              >
+                Logout
+              </button>
             ) : (
-              <button onClick={handleLogin}>Login</button>
+              <button
+                onClick={handleLogin}
+                className="text-slate-200 bg-slate-600 rounded px-3 py-1"
+              >
+                Login
+              </button>
             )}
 
             {/* <!-- Profile dropdown --> */}
@@ -134,7 +122,7 @@ const Navbar = () => {
                   <span className="sr-only">Open user menu</span>
                   <img
                     className="h-8 w-8 rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    src="https://th.bing.com/th/id/OIP.w-L3HP_7QYalYXw7apT2tAHaHx?rs=1&pid=ImgDetMain"
                     alt=""
                   />
                 </button>
@@ -160,13 +148,25 @@ const Navbar = () => {
         <div className="space-y-1 px-2 pb-3 pt-2">
           {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
 
-          <a
-            href="#"
+          <div
             className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
             aria-current="page"
           >
-            Home
-          </a>
+            <Link to={"/"}>Home</Link>
+            <ToastContainer
+              position="top-left"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
+              transition={Bounce}
+            />
+          </div>
         </div>
       </div>
     </nav>

@@ -1,0 +1,215 @@
+[
+  {
+    "name": "Introduction to React Native",
+    "instructor": "John Doe",
+    "description": "Learning the basics of React Native development and build your first mobile app.",
+    "enrollmentStatus": ["Open", "Closed", "Progress"],
+    "thumbnail": "https://th.bing.com/th/id/R.c438b672c1005b1bbde4812468d74551?rik=HaTgQ9X0lAGQAg&riu=http%3a%2f%2fwww.appcoda.com%2fwp-content%2fuploads%2f2015%2f04%2freact-native-1024x631.png&ehk=0ecJ65prN%2f%2f8U9U7WSnPqMPJ%2fuPo5iFbyIT9hV0J3YE%3d&risl=&pid=ImgRaw&r=0",
+    "duration": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+    "location": "Online",
+    "prerequisites": ["Basic Javascript knowledge", "Familiarity with React"],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Introduction to React Native",
+        "content": "Overview of React Native, setting up your development environment."
+      },
+      {
+        "week": 2,
+        "topic": "Building Your First App",
+        "content": "Creating a simple mobile app using React Native components."
+      }
+    ],
+    "students": [
+      {
+        "id": 1,
+        "name": "Bala",
+        "email": "bala@gmail.com"
+      },
+      {
+        "id": 2,
+        "name": "Mano",
+        "email": "mano@gmail.com"
+      }
+    ]
+  },
+  {
+    "name": "The Complete Python Bootcamp From Zero to Hero in Python",
+    "instructor": "Jose Portilla",
+    "description": "Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games.",
+    "enrollmentStatus": ["Open", "Closed", "Progress"],
+    "thumbnail": "https://www.dailymoss.com/wp-content/uploads/2021/03/learn-the-most-popular-coding-language-with-this-online-python-course-60554e35242fa.jpg",
+    "duration": "Monday and Friday, 4:00 PM - 6:00 PM",
+    "location": "Online",
+    "prerequisites": [
+      "Beginners who have never programmed before.",
+      "Programmers switching languages to Python.",
+      "Intermediate Python programmers who want to level up their skills!"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Introduction to Python",
+        "content": "Overview of Python, setting up your development environment."
+      },
+      {
+        "week": 2,
+        "topic": "Building Your First App",
+        "content": "Creating a simple backend app using Python."
+      }
+    ],
+    "students": []
+  },
+  {
+    "name": "JavaScript Web Projects: 4 Projects to Build Your Portfolio",
+    "instructor": "Andrei Neagoe and Jacinto Wong",
+    "description": "Modern HTML5, CSS3, and JavaScript to build Responsive and Mobile Friendly projects for your dream portfolio and resume!",
+    "enrollmentStatus": ["Open", "Closed", "Progress"],
+    "thumbnail": "https://res.cloudinary.com/dtmtyaw0x/image/upload/v1647800199/Blogs/useful-javascript-one-liners/KIUcOgG_xg7rje.png",
+    "duration": "Tuesday and Saturday, 5:00 PM - 7:00 PM",
+    "location": "Online",
+    "prerequisites": [
+      "New or junior developers who want to learn modern JavaScript",
+      "Programmers who want to learn frontend web development",
+      "IDevelopers who know the basics of JavaScript and want to deepen their knowledge"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Building Your First App",
+        "content": "Spock Rock Game - Confetti.js, Modules"
+      },
+      {
+        "week": 2,
+        "topic": "Building Your second App",
+        "content": "Countdown App - Date, localStorage"
+      },
+      {
+        "week": 3,
+        "topic": "Building Your third App",
+        "content": "Calculator - Math Methods"
+      },
+      {
+        "week": 4,
+        "topic": "Building Your fourth App",
+        "content": "Joke Teller - Fetch, Async/Await, Joke API, Text-to-Speech"
+      }
+    ],
+    "students": []
+  },
+  {
+    "name": "Machine Learning Practical Workout | 4 Real-World Projects",
+    "instructor": "Dr. Ryan Ahmed, SuperDataScience Team, Mitchell Bouchard, Ligency Team",
+    "description": "Build 4 Practical Projects and Go from Zero to Hero in Deep/Machine Learning, Artificial Neural Networks",
+    "enrollmentStatus": ["Open", "Closed", "Progress"],
+    "thumbnail": "https://th.bing.com/th/id/OIP.EpoBI6Pn9Yx_2uzM_GBJnQHaE8?rs=1&pid=ImgDetMain",
+    "duration": "Wednesday and Saturday, 4:00 PM - 7:00 PM",
+    "location": "Online",
+    "prerequisites": [
+      "Data Scientists who want to apply their knowledge on Real World Case Studies",
+      "Deep Learning practitioners who want to get more Practical Assigmetns",
+      "Machine Learning Enthusiasts who look to add more projects to their Portfolio"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Introduction",
+        "content": "Introduction to the course, Anaconda and Jupyter Installation"
+      },
+      {
+        "week": 2,
+        "topic": "Building Your First Project",
+        "content": "Artificial Neural Networks - Car sale prediction"
+      },
+      {
+        "week": 3,
+        "topic": "Building Your Second Project",
+        "content": "Deep Neural Networks - CIFAR -10 Classification"
+      },
+      {
+        "week": 4,
+        "topic": "Building Your Third Project",
+        "content": "LE-NET Deep Network - Traffic sign classification"
+      },
+      {
+        "week": 5,
+        "topic": "Building Your Fourth Project",
+        "content": "Natural Language Processing - E-Mail Spam Filter"
+      }
+    ],
+    "students": []
+  },
+
+  {
+    "name": "Next.js Projects - 4 NextJS 4 projects (Instagram, Google.)",
+    "instructor": "Dr.Sahand Ghavidel",
+    "description": "BNext.js 14 (reactjs framework) Projects. 4 NextJS 14 projects. IMDB, Instagram, Twitter, Google clone using Next js 14",
+    "enrollmentStatus": ["Open", "Closed", "Progress"],
+    "thumbnail": "https://images.ctfassets.net/23aumh6u8s0i/3jY4eCzPqbJ8bP7RX8SnTe/d6252025eff38698a5ed4ffdbd02f580/nextjs_hero",
+    "duration": "Thursday and Monday, 4:00 PM - 7:00 PM",
+    "location": "Online",
+    "prerequisites": [
+      "Developers who want to start using NextJS and build real-world applications",
+      "Basic understanding of HTML, CSS, Javascript and React"
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "IMDB Clone (Next.js 14)",
+        "content": "use TMBD database,style with Tailwind CSS"
+      },
+      {
+        "week": 2,
+        "topic": "Instagram Clone",
+        "content": "use Firebase for database and storage, style with Tailwind CSS, authenticate using next-auth, apply like and comment functionality, add upload functionality and use Image tag  ofnextjs"
+      },
+      {
+        "week": 3,
+        "topic": "Google Clone",
+        "content": "style with Tailwind CSS, authenticate using next-auth, use google search api, include web and image search"
+      },
+      {
+        "week": 4,
+        "topic": "Twitter Clone",
+        "content": "style with Tailwind CSS,authenticate using next-auth and Firebase auth,apply like and comment functionality, add upload functionality and use Image tag of nextjs"
+      }
+    ],
+    "students": []
+  },
+
+  {
+    "name": "DevOps Projects | Real Time DevOps & GitOps Projects",
+    "instructor": "Imran Teli",
+    "description": "Master Your DevOps Skills with Real challenge Ever wondered about DevOps Projects in Real Time?  Wanted some hands on experience in those projects? Wished you create Continuous Delivery pipelines and automation frameworks for the IT organizations? That sounds Impossible without getting into the PROJECTS in Real Time.",
+    "enrollmentStatus": ["Open", "Closed", "Progress"],
+    "thumbnail": "https://th.bing.com/th/id/R.744318c6870df72b06c34e2eafb9321e?rik=QHVigf4MYMeBAg&riu=http%3a%2f%2fblogs.vmware.com%2fmanagement%2ffiles%2f2020%2f03%2f2020-03-02_14-18-57-1024x510.png&ehk=kij17OWNN%2fuLHoDvt%2fpPFDl7itpu%2fggwo6mgJROp1N4%3d&risl=&pid=ImgRaw&r=0",
+    "duration": "Thursday and Monday, 4:00 PM - 7:00 PM",
+    "location": "Online",
+    "prerequisites": [
+      "Knowledge in Linux, Networking Fundamentals, AWS, Ansible, Jenkins are must."
+    ],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Introduction and VM Setup",
+        "content": "VM Setup MacOS M1 Chip, Multi Tier Web Application Setup, Locally"
+      },
+      {
+        "week": 2,
+        "topic": "Re-Architecting Web app on AWS Cloud",
+        "content": "Containerization of Java Project using Docker"
+      },
+      {
+        "week": 3,
+        "topic": "Jenkins Pipeline as a code (Groovy) Project",
+        "content": "Continuous Integration using Jenkins, Nexus, Soanrqube & Slack"
+      },
+      {
+        "week": 4,
+        "topic": "GitOps Projects",
+        "content": "Continuous Delivery and configuration Management"
+      }
+    ],
+    "students": []
+  }
+]

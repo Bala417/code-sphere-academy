@@ -5,6 +5,7 @@ import "./App.css";
 import LoginPage from "./Pages/LoginPage";
 import UserRegister from "./Pages/UserRegister";
 import CourseDetailsPage from "./Pages/CourseDetailsPage";
+import PasswordReset from "./Pages/PasswordReset";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             path="/courseDetailsPage/:courseId"
             element={<CourseDetailsPage />}
           />
+          <Route path="/passwordReset" element={<PasswordReset />} />
         </Routes>
       </Router>
     </div>
